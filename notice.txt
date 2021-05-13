@@ -1,0 +1,13 @@
+Install requirements
+pip install -r requirements
+
+set directory
+
+cd src
+cd ml_api
+set FLASK_APP=run.py
+
+When you want to run flask app type
+
+python run.py
+
