@@ -9,11 +9,11 @@ from setuptools import find_packages, setup
 
 
 # Package meta-data.
-NAME = 'regression_model'
-DESCRIPTION = 'Train and deploy regression model.'
-URL = 'your github project'
-EMAIL = 'your_email@email.com'
-AUTHOR = 'Your name'
+NAME = 'models'
+DESCRIPTION = 'Train and deploy models.'
+URL = 'https://github.com/namph-sgn/ml_api/tree/master/packages/models'
+EMAIL = 'namph.sgn@gmail.com'
+AUTHOR = 'Nam '
 REQUIRES_PYTHON = '>=3.6.0'
 
 
@@ -42,9 +42,9 @@ except FileNotFoundError:
 
 # Load the package's __version__.py module as a dictionary.
 ROOT_DIR = Path(__file__).resolve().parent
-PACKAGE_DIR = ROOT_DIR / NAME
+# PACKAGE_DIR = ROOT_DIR / NAME
 about = {}
-with open(PACKAGE_DIR / 'VERSION') as f:
+with open(ROOT_DIR / 'VERSION') as f:
     _version = f.read().strip()
     about['__version__'] = _version
 

@@ -1,7 +1,7 @@
 from packages.ml_api.api.config import get_logger
 from flask import Blueprint, request, jsonify
-from models.regression_models.predict import make_prediction
-from api.config import get_logger
+from packages.models.regression_model.predict import make_prediction
+from packages.ml_api.api.config import get_logger
 
 
 prediction_app = Blueprint('prediction_app', __name__)
